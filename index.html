@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keren Hapuch Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Keren<span>Hapuch</span></a>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#interests" class="nav-link">Interests</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Mobile Navigation Toggle -->
+        <div class="menu-toggle">
+          <i class="fas fa-bars" id="menuOpen"></i>
+          <i class="fas fa-times hidden" id="menuClose"></i>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#interests" class="mobile-link">Interests</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2 class="subtitle">
+              <i class="fas fa-user"></i>
+              <span>KEREN HAPUCH NTINYARI</span>
+              <i class="fas fa-briefcase"></i>
+            </h2>
+            <h1 class="title">Full-Stack <span>Developer</span></h1>
+            <p class="description">
+              Hi, I'm Keren Hapuch Ntinyari, a tech enthusiast dedicated to building innovative solutions in AI, automation, and web development. With a keen eye for problem-solving, I strive to create impactful digital experiences that drive change.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn-primary">
+                <span>View My Projects</span>
+                <i class="fas fa-arrow-down"></i>
+              </a>
+              <a href="https://drive.google.com/file/d/16kC00PqAuXEWkgyxVNbTZtK227a85X9Z/view" target="_blank" class="btn-secondary">
+                <span>Download CV</span>
+                <i class="fas fa-file-download"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+                <img src="images/selfie.jpg" alt="Keren Hapuch">
+
+              <div class="image-tag">
+                <p>Tech Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <a href="#projects">
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">EXPENSE TRACKER</h3>
+                <a href="https://github.com/Ntinyari24/expense_tracker.git" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <p class="project-description">A Python-based expense tracking app built with Flask and SQLite, integrating APIs for enhanced functionality.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">APIs</span>
+              </div>
+              <a href="https://github.com/Ntinyari24/expense_tracker.git" target="_blank" class="see-more">
+                <span>See More</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Simple Calculator Using Python</h3>
+                <a href="https://github.com/Ntinyari24/Calculator-program.git" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <p class="project-description">A simple Python calculator program that covers all basic operations and edge cases.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+              </div>
+              <a href="https://github.com/Ntinyari24/Calculator-program.git" target="_blank" class="see-more">
+                <span>See More</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">SUDOKU GAME</h3>
+                <a href="https://github.com/Ntinyari24/SUDOKU.git" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <p class="project-description">A Python-based Sudoku solver and generator with varying difficulty levels.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              <a href="https://github.com/Ntinyari24/SUDOKU.git" target="_blank" class="see-more">
+                <span>See More</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">PARTICLE SIZE DISTRIBUTION AND CRUSHER SIMULATION</h3>
+                <a href="https://github.com/Ntinyari24/material-flow-simulation.git" target="_blank" class="github-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <p class="project-description">Simulates a crusher process by taking an initial Particle Size Distribution (PSD) and applying a crushing operation.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">Simulation</span>
+              </div>
+              <a href="https://github.com/Ntinyari24/material-flow-simulation.git" target="_blank" class="see-more">
+                <span>See More</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Tech Stack</h2>
+        
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <span class="skill-name">Python</span>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <span class="skill-name">Java</span>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-php"></i>
+            </div>
+            <span class="skill-name">PHP</span>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-cuttlefish"></i>
+            </div>
+            <span class="skill-name">C/C++</span>
+          </div>
+        </div>
+        
+        <div class="additional-skills">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-terminal"></i>
+              <h3>Development Tools</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-tag">Git</div>
+              <div class="skill-tag">Visual Studio Code</div>
+              <div class="skill-tag">PyCharm</div>
+              <div class="skill-tag">Jupyter</div>
+              <div class="skill-tag">Docker</div>
+              <div class="skill-tag">Flask</div>
+              <div class="skill-tag">APIs</div>
+            </div>
+          </div>
+          
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-code"></i>
+              <h3>Other Skills</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-tag">Problem Solving</div>
+              <div class="skill-tag">Data Structures & Algorithms</div>
+              <div class="skill-tag">Database Management</div>
+              <div class="skill-tag">API Integration</div>
+              <div class="skill-tag">Web Development</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">My Education</h2>
+        
+        <div class="timeline">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+              <h3 class="school-name">Jomo Kenyatta University of Agriculture And Technology</h3>
+              <div class="education-years">
+                <i class="far fa-calendar-alt"></i>
+                <span>2022 - Present</span>
+              </div>
+              <p class="education-degree">Bachelor's in Computer Science</p>
+              <div class="education-details">
+                <p>Focusing on core computer science principles, software development, and practical problem-solving skills.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="education-content">
+              <h3 class="school-name">PLP ACADEMY - COHORT VII</h3>
+              <div class="education-years">
+                <i class="far fa-calendar-alt"></i>
+                <span>March 2025 - Present</span>
+              </div>
+              <p class="education-degree">Software Engineering Course</p>
+              <div class="education-details">
+                <p>Focusing on core computer science principles, software development, and practical problem-solving skills.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="education-content">
+              <h3 class="school-name">COURSERA</h3>
+              <div class="education-years">
+                <i class="far fa-calendar-alt"></i>
+                <span>August 2024 - December 2024</span>
+              </div>
+              <p class="education-degree">Python Fundamentals for Beginners</p>
+              <div class="education-details">
+                <p>Focusing on core computer science principles, software development, and practical problem-solving skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+      <div class="container">
+        <h2 class="section-title">Tech Interests</h2>
+        
+        <div class="interests-grid">
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="interest-title">Full-Stack Development</h3>
+            <p class="interest-description">Building projects using Django, Flask, and APIs.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="interest-title">Data Automation</h3>
+            <p class="interest-description">Extracting data and automating insights.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="interest-title">Tech for Women</h3>
+            <p class="interest-description">Exploring tech-driven solutions to solve underserved communities.</p>
+          </div>
+        </div>
+        
+        <div class="learning-box">
+          <h3 class="learning-title">Always Learning & Exploring</h3>
+          <p class="learning-description">
+            As a tech enthusiast, I'm constantly expanding my knowledge in emerging technologies and methodologies. 
+            I enjoy tackling challenging problems and finding elegant solutions through code.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">
+          Feel free to reach out for collaborations, project opportunities, or just to say hello!
+        </p>
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/keren-hapuch-2311242b0" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com/yourgirl_hapuch" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/Ntinyari24" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:kerenhapuch68@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        
+        <div class="contact-buttons">
+          <a href="mailto:kerenhapuch68@gmail.com" class="btn-primary">
+            <i class="fas fa-envelope"></i>
+            <span>kerenhapuch68@gmail.com</span>
+          </a>
+          
+          <a href="https://drive.google.com/file/d/16kC00PqAuXEWkgyxVNbTZtK227a85X9Z/view" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fas fa-file-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <div class="container">
+          <p class="copyright">
+            &copy; <span id="currentYear"></span> Keren Hapuch. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
