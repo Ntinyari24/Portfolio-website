@@ -31,6 +31,9 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -231,7 +234,7 @@ img {
   width: 80%;
   max-width: 320px;
   height: 100vh;
-  background-color: white;
+  background-color: var(--secondary-color);
   z-index: 999;
   padding: 100px 30px 30px;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.08);
@@ -383,20 +386,34 @@ img {
 }
 
 .project-card {
-  background-color: var(--card-background);
+  background-color: var(--light-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: var(--transition);
   opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
+  transform: translateY(20px); /* starting position */
+  animation: fadeInUp 0.6s ease forwards;
   animation-delay: calc(var(--i, 0) * 0.1s);
+}
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .project-content {
   padding: 20px;
@@ -413,6 +430,8 @@ img {
   font-size: 1.2rem;
   color: var(--dark-color);
 }
+
+
 
 .github-link {
   font-size: 1.2rem;
@@ -539,7 +558,7 @@ img {
 
 .education-card {
   position: relative;
-  background-color: var(--card-background);
+  background-color: var(--light-color);
   border-radius: 12px;
   padding: 25px;
   margin-bottom: 40px;
@@ -597,8 +616,7 @@ img {
 
 .education-details {
   color: var(--text-light);
-  height: 0;
-  opacity: 0;
+  margin-top: 15px;
   transition: var(--transition);
 }
 
@@ -621,7 +639,7 @@ img {
 }
 
 .interest-card {
-  background-color: var(--card-background);
+  background-color: var(--light-color);
   border-radius: 12px;
   padding: 25px;
   box-shadow: var(--shadow);
@@ -659,7 +677,7 @@ img {
 }
 
 .learning-box {
-  background-color: var(--card-background);
+  background-color: var(--light-color);
   border-radius: 12px;
   padding: 30px;
   box-shadow: var(--shadow);
@@ -675,7 +693,7 @@ img {
 
 /* Contact Section */
 .contact {
-  background-color: white;
+  background-color: var(--accent-color);
   position: relative;
 }
 
@@ -724,6 +742,7 @@ img {
   text-align: center;
   padding: 30px 0;
   border-top: 1px solid var(--light-color);
+  background-color: var(--accent-color);
 }
 
 .copyright {
