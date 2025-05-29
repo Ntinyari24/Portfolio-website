@@ -37,11 +37,6 @@ This project is structured as a static website:
 ## 📸 Images & Assets
 
 All image files used in the site are stored in the `/images/` directory.  
-Make sure your image path is correctly written in your HTML. For example:
-
-```html
-<img src="images/selfie.jpg" alt="Keren Hapuch">
-
 
 📄 How to Use / Run Locally
 
