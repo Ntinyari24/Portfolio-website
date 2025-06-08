@@ -386,6 +386,7 @@ img {
 }
 
 .project-card {
+  padding: 20px;
   background-color: var(--light-color);
   border-radius: 12px;
   overflow: hidden;
